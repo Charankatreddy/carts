@@ -48,6 +48,7 @@ jobs:
          path: target/
          registry: docker.io
          image: charankatreddy/sockshop
+         
          #push: true
          #tags: charankatreddy/sockshop:shipping
           #tag_with_ref:true
