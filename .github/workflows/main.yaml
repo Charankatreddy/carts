@@ -44,10 +44,10 @@ jobs:
       uses: mr-smithers-excellent/docker-build-push@v5
       if: startsWith(github.ref, 'refs/tags/v') || github.ref == 'refs/heads/master'
       with:
-         dockerfile: docker/carts/Dockerfile
-         path: target/
+         dockerfile: ./Dockerfile
+        # path: target/
          registry: docker.io
-         image: charankatreddy/sockshop
+         image: charankatreddy/carts
          
          #push: true
          #tags: charankatreddy/sockshop:shipping
